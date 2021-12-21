@@ -1,0 +1,80 @@
+.container{
+    width: calc(1/4*100% - .5vw);
+    height: 11vw;
+
+    margin-left: .5vw;
+    margin-bottom: .5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    cursor: pointer;
+}
+
+.header{
+    text-align: right;
+    padding: .5vw;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+.content{
+    text-align: center;
+    padding: .5vw;
+    font-size: 1.9vw;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.footer{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 0 .8vw .8vw .8vw;
+    font-weight: 700;
+    font-size: 1vw;
+}
+
+.footer > .time{
+    display: flex;
+    align-items: center;
+}
+
+.footer > .time > img{
+    margin-right: 2px;
+}
+
+.footer > .ticket{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer > .ticket > img{
+    margin-right: 2px;
+}
+
+
+@media( max-width: 580px){
+    .container{
+        width: calc(1/2*100% - 2.5vw);
+        height: 40vw;
+        margin-left: 2.5vw;
+        margin-bottom: 2.5vw;
+    }
+
+    .header{
+        font-size: 4vw;
+        padding: 1vw 2vw 0 0;
+    }
+
+    .content{
+        font-size: 7vw;
+    }
+
+    .footer{
+        font-size: 4vw;
+        padding: 2vw;
+    }
+}

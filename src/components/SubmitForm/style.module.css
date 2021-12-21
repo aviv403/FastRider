@@ -1,0 +1,50 @@
+.container{
+    margin-top: 20px;
+}
+
+.container > form{
+    position: relative;
+    display: flex;
+    height: 3vw;
+}
+
+.container > form > input{
+    padding: 1px 7px 1px 7px;
+    flex: 1;
+    border: none;
+    background-color: none;
+    outline: none;
+    font-size: 1.5vw;
+    font-weight: 600;
+
+}
+.container > form > button{
+    width: 10vw;
+    outline: none;
+    color: #FFF;
+    background-color: var(--btnColor);
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    border: unset;
+}
+
+
+@media( max-width: 580px){
+    .container > form{
+        height: 10vw;
+    }
+    .container > form > input{
+        font-size: 5vw;
+    }
+    .container > form > button{
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        font-size: 7vw;
+        height: 15%;
+    }
+}

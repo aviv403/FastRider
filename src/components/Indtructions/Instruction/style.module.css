@@ -1,0 +1,27 @@
+.container{
+    flex: 1;
+    padding: 20px;
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin: auto;
+    background-color: var(--cubeBgColor);
+    border-radius: 100%;
+}
+
+.text{
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+
+@media (max-width: 580px) {
+    .text{
+        font-size: 4.5vw;
+    }
+}

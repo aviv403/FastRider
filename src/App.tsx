@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Instructions from "./components/Indtructions";
+import Title from "./components/Title";
+import SubmitForm from "./components/SubmitForm";
+import RideList from "./components/RiderList";
+import RideAccess from "./components/RideAccess";
+import { useSelector } from "react-redux";
+import "react-toastify/dist/ReactToastify.css";
+import { IState } from "./store/types";
+import { useMediaQuery } from "react-responsive";
 
-function App() {
+const App: React.FC = () => {
+  const selectedRide = useSelector((state: IState) => state.selectedRide);
+  const isMobile = useMediaQuery({ query: `(max-width: 580px)` });
+
+  const styles = {
+    margin: "auto",
+    width: isMobile ? "90%" : "50%",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={styles}>
+      <Title />
+      {selectedRide?.id ? (
+        <RideAccess />
+      ) : (
+        <>
+          <Instructions />
+          <SubmitForm />
+          <RideList />
+        </>
+      )}
     </div>
   );
-}
+};
 
 export default App;

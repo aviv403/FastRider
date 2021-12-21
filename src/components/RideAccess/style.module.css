@@ -1,0 +1,101 @@
+.container{
+    width: 25vw;
+    font-weight: 600;
+    margin: auto;
+    font-size: 1.1vw;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vw;
+}
+
+.header > .icon{
+    text-align: center;
+    background-color: var(--cubeBgColor);
+    border-radius: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header > .headerContent{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.footer{
+    background-color: var(--cubeBgColor);
+    padding: .5vw;
+    text-align: center;
+}
+
+.footer > .names{
+    display: flex;
+    justify-content: space-between;
+}
+
+.names > .rideName{
+    color: #FFF;
+}
+
+.footer > .returnTime{
+    padding: 1vw 0 1vw 0;
+}
+
+.footer > .accessCode{
+    padding: 1vw 0 1vw 0;
+}
+
+.code, .time{
+    color: #FFF;
+    font-size: 1.6vw;
+}
+
+.container > button{
+    margin: auto;
+    background-color: var(--cubeBgColor);
+    color: #FFF;
+    margin-top: 1vw;
+    cursor: pointer;
+    font-size: 1.5vw;
+    border: unset;
+    outline: none;
+    padding: 3px 15px 4px 15px;
+}
+
+
+@media( max-width: 580px){
+    .container{
+        width: 90vw;
+        font-size: 4.5vw;
+    }
+
+    .header{
+        padding-bottom: 4vw;
+    }
+
+    .footer{
+        padding-bottom: 5vw;
+    }
+    
+    .footer > .returnTime{
+        padding-bottom: 3vw;
+    }
+
+    .footer > .names{
+        padding: 2vw;
+    }
+
+    .code, .time{
+        font-size: 6vw;
+    }
+
+    .container > button{
+        margin-top: 3vw;
+        font-size: 5vw;
+        height: 10vw;
+    }
+}
