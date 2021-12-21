@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/FastRider/static/css/main.4ebd79ce.css",
+    "main.js": "/FastRider/static/js/main.9b2a244a.js",
+    "static/js/787.75a62b4a.chunk.js": "/FastRider/static/js/787.75a62b4a.chunk.js",
+    "index.html": "/FastRider/index.html",
+    "main.4ebd79ce.css.map": "/FastRider/static/css/main.4ebd79ce.css.map",
+    "main.9b2a244a.js.map": "/FastRider/static/js/main.9b2a244a.js.map",
+    "787.75a62b4a.chunk.js.map": "/FastRider/static/js/787.75a62b4a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ebd79ce.css",
+    "static/js/main.9b2a244a.js"
+  ]
+}
